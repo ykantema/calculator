@@ -6,4 +6,4 @@ import pytest
     (2, 3, 6)
 ])
 def test_clac_multiplied(calculator_multiplied,first, sec, equal):
-    assert equal == calculator_multiplied.func(first, sec)
+    assert equal == calculator_multiplied.func(calculator_multiplied, first, sec)

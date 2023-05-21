@@ -21,9 +21,8 @@ def calculator_multiplied(calculator):
     return calculator
 
 
-def fn_is_equal(a, b):
-    if len(str(a)) != len(str(b)):
-        return False
+def fn_is_equal(self, a, b):
+    assert self.__class__.__name__ == 'Calculator'
     dict_a = {}
     dict_b = {}
     while a > 0:
